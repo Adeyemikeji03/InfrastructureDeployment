@@ -7,8 +7,6 @@ sudo apt update
 sudo apt install openjdk-17-jre-headless -y
 sudo apt install ca-certificates
 sudo apt update
-sudo apt install maven -y
-sudo apt update
 sudo apt install jenkins -y
 sudo apt-get update -y
 wget -O- https://apt.releases.hashicorp.com/gpg | \
@@ -26,4 +24,3 @@ echo 'clearing screen...' && sleep 5
 clear
 echo 'jenkins is installed'
 echo 'this is the default password :' $(sudo cat /var/lib/jenkins/secrets/initialAdminPassword)
-sudo reboot
